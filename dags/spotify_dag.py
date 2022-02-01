@@ -1,8 +1,8 @@
 from datetime import timedelta, datetime
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from spotify_etl_airflow.spotify_etl import spotify_etl
-from spotify_etl_airflow.load_view import load_view_top_five
+from spotifyetl_airflow.spotify_etl import spotify_etl
+from spotifyetl_airflow.load_view import load_view_top_five
 
 token = "BQA2v2KszL7ko3R3PkSc9SgcWAyQC0JKFzh-UiUhJhyWM3cquJgYN6qX32fqkF9aMYMIeRLyYg7ZYqXMMUh2v7LlxuRV94po_SH5VVEV7zKC2v6KSB1BKZhW8NRGxLzaY1EdVrKaTaxV5iqszop8jZYcU5JmDv2lxe3TvrAci3x-qhg"
 
