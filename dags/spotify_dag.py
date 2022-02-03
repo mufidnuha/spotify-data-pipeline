@@ -4,7 +4,7 @@ from airflow.operators.python import PythonOperator
 from spotify_etl_airflow.spotify_etl import spotify_etl
 from spotify_etl_airflow.load_view import load_view_top_five
 
-token = "BQA2v2KszL7ko3R3PkSc9SgcWAyQC0JKFzh-UiUhJhyWM3cquJgYN6qX32fqkF9aMYMIeRLyYg7ZYqXMMUh2v7LlxuRV94po_SH5VVEV7zKC2v6KSB1BKZhW8NRGxLzaY1EdVrKaTaxV5iqszop8jZYcU5JmDv2lxe3TvrAci3x-qhg"
+token = "BQDjHX9uPEa_FO3m8tgBJX5S5KTtls_sZHXP5PyPf4LLu0fR8Zn8Fv47ChBAOpFJGYohEw1nE-ysotgwvmbSYCIUZWDhOWuv6RypKOh0Yauu4kgK7ZcBse87JeAABkX7dz4Q1qlZbzwFabdOt1qntigBYROooq658V0E66xOyStMX0Q"
 
 default_args = {
     'owner': 'mufida',
