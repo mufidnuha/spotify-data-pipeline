@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 from datetime import datetime, date
 import datetime as dt
-from posgres_conn import get_engine_from_settings
+from spotify_etl_airflow.posgres_conn import get_engine_from_settings
 from pangres import upsert
 
 def create_date():
