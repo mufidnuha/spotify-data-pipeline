@@ -1,4 +1,4 @@
-from spotify_etl_airflow.posgres_conn import get_engine_from_settings
+from posgres_conn import get_engine_from_settings
 
 def load_view_top_five():
     engine = get_engine_from_settings()
