@@ -1,7 +1,7 @@
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from sqlalchemy_utils import database_exists, create_database
-from spotify_etl_airflow.local_settings import posgresql as settings
+from local_settings import posgresql as settings
 
 def get_engine(user, passwd, host, port, db):
     url = f"postgresql://{user}:{passwd}@{host}:{port}/{db}"

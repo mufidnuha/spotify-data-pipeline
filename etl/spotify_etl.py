@@ -1,5 +1,5 @@
-from spotify_etl_airflow.data_model import DataModel
-from spotify_etl_airflow.transformer import PlayedTracksTransformer, TracksArtistsTransformer
+from data_model import DataModel
+from transformer import PlayedTracksTransformer, TracksArtistsTransformer
 from sqlalchemy import VARCHAR, DATE, ARRAY, INTEGER
 
 def spotify_etl(token):
