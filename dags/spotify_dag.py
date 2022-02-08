@@ -1,10 +1,10 @@
 from datetime import timedelta, datetime
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from etl.spotify_etl import spotify_etl
-from etl.load_view import load_view_top_five
+from src.spotify_etl import spotify_etl
+from src.load_view import load_view_top_five
 
-token = "BQBR2MN6YoUxnorvb7t_bZetO5FKRZH2EsDCQVujj1m945PFEzfGugPxwn-5V0iOzIfDUzINieKdCdhp9OekuAJOKpvBDfcAS_S_y-S5R8WUcTiOGC8nEzNJ_qjXv2-o4W5d_GvdlhT8KTQpaqbCFr-v6qtjCo1z00mmTLh3IDXvkBU"
+TOKEN = ""
 
 default_args = {
     'owner': 'mufida',
@@ -27,7 +27,7 @@ etl = PythonOperator(
     task_id='spotify_etl_task',
     dag=dag,
     python_callable=spotify_etl,
-    op_kwargs={'token':token}
+    op_kwargs={'token':TOKEN}
 )
 
 load_view = PythonOperator(
