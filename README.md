@@ -7,4 +7,4 @@ Simple data pipeline that download songs list we've listened in the last 24-hour
 3. Apache Spark 3.2.0
 
 ## ETL Diagram
-<img src="./additional_files/etl_diagram.jpg" width="50" height="50" />
+<img src="./additional_files/etl_diagram.jpg" width="200" height="2000" />
